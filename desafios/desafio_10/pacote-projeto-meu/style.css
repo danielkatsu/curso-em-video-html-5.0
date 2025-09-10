@@ -1,0 +1,163 @@
+@font-face {
+    font-family: idroid;
+    src: url(/pacote-projeto-d010/fontes/idroid.otf);
+}
+* {
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body {
+    background-color: rgb(126, 190, 126);
+} 
+/*Cabecalho*/
+header {
+    background-image: linear-gradient( rgb(26, 237, 121), rgb(8, 113, 50));
+    color: aliceblue;
+    padding: 0 0 5px 0;
+} & header > h1{
+    text-align: center;
+    padding-top: 20px;
+    
+} & header > p{
+    padding: 10px 0 20px 0px;
+    margin: auto;
+    text-align: center;
+    width: 70%;
+} & header > ul > li{
+    display: inline;
+    padding: 20px 0 5px 10px;
+    font-size: 13px;
+}
+/*Corpo*/
+main {
+    background-color: aliceblue;
+    width: 75%;
+    margin: auto;
+    border-radius: 5px;
+    box-shadow: 1px 1px 5px 0px;
+} & main > h1{
+    font-family: idroid;
+    font-size: 18px;
+    padding: 10px 0 0 10px;
+    color: rgb(17, 169, 96);
+} & main > h2{
+    color: rgb(17, 169, 96);
+    background-image: linear-gradient(to right,rgba(15, 186, 83, 0.493), rgba(26, 237, 121, 0));
+    font-family: idroid;
+    font-size: 13px;
+    margin-left: 10px;
+} & p {
+    text-indent: 20px;
+    padding: 10px 5px 10px 10px;
+    font-size: x-small;
+    margin: auto;
+} & img {
+    width: 300px;
+    display: block;
+    margin: auto;
+} & .img2 {
+    display: none;
+} & iframe {
+    display: block;
+    margin: auto;
+    border: 10px rgb(17, 80, 49) solid;
+    border-right-width: 32px;
+    border-left-width: 32px;
+} & #listas{
+    margin: 20px 0 0 10px;
+    border-radius: 20px;
+    width: 95%;
+    height: auto;
+    background-color: rgba(0, 238, 79, 0.364);
+} & #mais {
+    color: aliceblue;
+    border-radius: 20px 20px 0px 0px;
+    background-color: rgb(26, 237, 121);
+    font-size: 12px;
+    font-weight: 600;
+} & #list {
+    display: flex;
+    
+} #list > ul {
+    padding-left: 30px;
+    font-size: 10px;
+} & #listright {
+    margin-left: 50px;
+} #listas > p {
+    margin: 0;
+    padding: 10px;
+}
+/*Rodapé*/
+footer{
+    color: white;
+    text-align: center;
+    font-weight: 800;
+    margin: 10px 0 0 0;
+    padding: 5px 0 0 0;
+    background-color: rgb(14, 118, 69);
+}
+@media (min-width: 501px) {
+    img {
+        margin: auto;
+        padding: 0;
+    }
+    .img1 {
+     display: none;
+    }
+    .img2 {
+        display: block;
+    }
+    .img3 {
+        margin: 0 90px 0 90px;
+    }
+}
+@media (min-width: 640px) {
+    p {
+        font-size: 12px;
+    }
+    main > h1 {
+        font-size: 22px;
+    }
+    img{
+        width: 95%;
+    }
+    .img3 {
+        width: 70%;
+        margin: auto;
+    }
+    iframe {
+        width: 80%;
+        height: 200px;
+        border: 10px rgb(17, 80, 49) solid;
+        border-right-width: 47px;
+        border-left-width: 47px;
+    }
+    #listright {
+    margin-left: 100px; 
+    }
+    #list > ul {
+    padding-left: 50px;
+    font-size: 11px;
+    } 
+    @media (min-width: 1080px) {
+        iframe {
+        width: 80%;
+        height: 300px;
+        border: 15px rgb(17, 80, 49) solid;
+        border-right-width: 60px;
+        border-left-width: 60px;
+        }
+        #list > ul {
+        padding-left: 120px;
+        font-size: 12px;
+        }   
+        #listright {
+    margin-left: 200px; 
+       }
+       .img3 {
+        width: 50%;
+        margin: auto;
+    }
+}
+}

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudos classes</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: rgb(184, 248, 227);
+            text-align: center;
+        }
+        div {
+            height: 100px;
+            width: 400px;
+            border: 1px solid blue; /*ShortHand Border: border: <border-width> <border-style> <border-color>;*/
+        } & div#div1 {
+            background-color: rgb(220, 67, 67);
+        } & div#div2{
+            background-color: rgb(74, 234, 87);
+        } & div#div3 {
+            background-color: rgb(87, 87, 211);
+        } & div#div3:hover {
+            background-color: black;
+        }
+    </style>
+</head>
+<body>
+    <div id="div1">Div2</div>
+    <div id="div2">Div1</div>
+    <div id="div3">Div3</div>
+</body>
+</html>

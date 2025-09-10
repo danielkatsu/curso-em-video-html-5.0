@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>imagens</title>
+    <style>
+        img{
+        width: 500px;
+        }
+    </style>
+</head>
+<body>
+    <h1>
+        Html | Css
+    </h1>
+    <h2>
+        Redimicinamento de imagen 
+    </h2>
+    <picture>
+        <source media="(max-width: 750px)" srcset="imagens/foto-p.png">
+        <source media="(max-width: 1110px)" srcset="imagens/foto-m.png">
+        <img src="imagens/foto-g.png" alt="">
+    </picture>
+    <h2>
+        Colocando audio no site:
+    </h2> <!--<audio src=""controls loop autoplay -->
+    <audio src="audios/Silent Night - The Soundlings.mp3" controls autoplay loop></audio>
+    <p><a href="audios/Silent Night - The Soundlings.mp3" download="Silent Night - The Soundlings.mp3"><strong>Link para baixar</strong></a></p>
+</body>
+</html>

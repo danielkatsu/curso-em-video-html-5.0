@@ -1,0 +1,30 @@
+* {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+body {
+    background-image: linear-gradient(to left, #8C5845, #40372C);
+}
+main {
+    width: 650px;
+    padding: 5px;
+    margin: auto;
+    background-color: #aa9071;
+    border-radius: 20px;
+    box-shadow: 3px 3px 5px #806d55;
+/*Faltava o MArgin auto para centralizar**/
+}
+h1 {
+    margin: auto;
+    color: #F2E3D0;
+    text-shadow: 1px 1px 2px #F2E3D0; /*Neste esqueci de trocar o box por text-shadow*/
+    width: 450px;
+    border-radius: 20px;
+}
+h2 {
+    color: #4a3d36;
+}
+p {
+    text-align: justify;
+    color: #d3c7b6;
+    padding: 5px;
+}

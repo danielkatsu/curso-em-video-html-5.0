@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modelos de Caixa</title>
+    <style>
+        body {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            margin: 0;
+            background-color: rgb(107, 107, 107);
+        }
+
+        header {
+            margin: 11px;
+        } & h1 {
+            box-shadow: inset 0px 0px 16px rgba(0, 0, 0, 0.405);
+        } & button{
+            margin: 0 40px 20px 0;
+            background-color: aquamarine;
+            border-radius: 10px;
+        } & nav:hover > a{
+            display: block;
+            display: inline;
+        } & a {
+            text-decoration: none;
+            display: none;
+            width: 100px;
+            margin: 10px 50px 10px 10px;
+            color: rgb(255, 241, 241);
+            box-shadow: 10px 7px 8px -8px rgba(0, 0, 0, 0.438);
+        } a:hover {
+            text-decoration: underline;
+            color: blue;
+        }
+
+
+        main {
+            margin: 11px;
+        } & section {
+            border-radius: 0px 20px;
+            padding: 6px;
+            color: aliceblue;
+        } & section:hover{
+           background-color:  rgb(255, 255, 255);
+           color: rgb(0, 0, 0);
+        } & section:hover > aside > p#aparecer {
+            background-color: rgb(255, 255, 255);
+            color: rgb(0, 0, 0);
+            display: block;
+            border-radius: 0px 20px;
+        } & p#aparecer {
+            display: none;
+        }
+
+
+        footer {
+            text-align: center;
+            margin: auto;
+            width: 300px;
+            border-radius: 10px;
+            background-color: rgba(99, 99, 99, 0.604);
+        } & footer > p{
+            font: italic 17px Cambria;
+            padding: 4px;
+            color: aliceblue;
+        }
+
+    </style>
+</head>
+<body >
+    <header>
+        <h1>
+            Brasil 
+        </h1>
+        <nav>
+            <button>
+                Click
+            </button>
+            <a href="https://youtube.com" target="_blank">Sport</a>
+            <a href="">Santos</a>
+            <a href="">Flamengo</a>
+            <a href="">Goias</a>
+        </nav>
+    </header>
+
+
+    <main>
+        <section >
+            <h2>
+                Football
+            </h2>
+            <article>
+                Football is very bad
+            </article>
+            <aside>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus dolorem totam minus, soluta eos dolores, voluptates, esse at in aut possimus laboriosam voluptate itaque nostrum ab similique delectus asperiores velit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt, deleniti. A eos repellendus nihil! Ducimus, id corrupti, ad quia deleniti voluptatum dolorum saepe nemo consequatur numquam non ullam adipisci cumque.</p>
+                <p id="aparecer">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia perspiciatis nulla veniam adipisci suscipit sequi provident libero, iusto delectus dolorum eveniet voluptatum! Harum, minus nisi reiciendis nihil unde omnis minima. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatum ratione sint asperiores iure optio reprehenderit vero voluptatem alias facilis, laboriosam praesentium incidunt reiciendis voluptas. Doloribus perspiciatis vero sunt sit veniam!
+                </p>
+            </aside>
+        </section>
+    </main>
+
+
+    <footer>
+        <p>
+            Produzido por Daniel
+        </p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,49 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: android;
+    src: url(/pacote-projetp-espellhado/pacote-projeto-d010/fontes/idroid.otf);
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Macondo&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+:root {
+    --green-fort: rgb(26, 97, 0);
+    --green-medio: rgb(14, 135, 14);
+    --green-fraco:  rgb(196, 233, 212);
+
+    --title: "Macondo", cursive;
+    --sub-title: 'android', sans-serif;
+}
+
+
+body {
+    background-color: var(--green-fraco);
+}
+
+
+header {
+    background-color: var(--green-medio);
+} & header > h1 {
+     font-family: var(--title);
+     font-weight: 900;
+}
+
+
+nav {
+    background-color: var(--green-fort);
+}
+
+
+article > h1, h2{
+    font-family: var(--sub-title);
+} & article > h1 {
+    font-size: 25px;
+} & article > h2 {
+    font-size: 20px;
+}
