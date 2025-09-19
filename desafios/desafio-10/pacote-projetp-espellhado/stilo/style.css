@@ -2,7 +2,7 @@
 
 @font-face {
     font-family: android;
-    src: url(/pacote-projetp-espellhado/pacote-projeto-d010/fontes/idroid.otf);
+    src: url(/desafios/desafio-10/pacote-projetp-espellhado/pacote-projeto-d010/fontes/idroid.otf);
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Macondo&display=swap');
@@ -14,7 +14,8 @@
 
 :root {
                     /*Cores so site*/
-    --green-fort: rgb(26, 97, 0);
+    --green-extra-fort: rgb(15, 47, 3);
+    --green-fort: rgb(29, 102, 5);
     --green-medio: rgb(14, 135, 14);
     --green-fraco:  rgb(196, 233, 212);
 
@@ -30,21 +31,39 @@ body {
 
                     /*Cabecalho*/
 header {
-    background-color: var(--green-medio);
+    min-height: 100px;
+    background-image: linear-gradient(to bottom, var(--green-fort), var(--green-extra-fort));
+    color: white;
+    text-align: center;
+    padding-top: 20px;
 } & header > h1 {
      font-family: var(--title);
      font-weight: 900;
+     font-size: 2.5em;
+} & header > p {
+    min-width: 300px;
+    margin-top: 10px;
+    font-size: 1.2em;
 }
 
                     /*Barra de lateral*/
 nav {
-    background-color: var(--green-fort);
+    background-color: var(--green-extra-fort);
+    padding: 5px;
+} nav > a{
+    color: white;
+    text-decoration: none;
+    font-size: larger;
+    margin-left: 7px;
+} :hover > a{
+    display: none;
 }
                     /*Corpo*/
 main {
     max-width: 80%;
     margin: auto;
     background-color: white;
+    border-radius: 0 0 10px 10px;
 }
                     /*Extenção do Corpo*/
 article {
