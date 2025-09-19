@@ -48,7 +48,7 @@ main {
 }
                     /*Extenção do Corpo*/
 article {
-    padding: 10px;
+    padding: 20px;
 }
 article > h1, h2{
     font-family: var(--sub-title);
