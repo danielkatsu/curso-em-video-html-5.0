@@ -14,7 +14,7 @@
 
 :root {
                     /*Cores so site*/
-    --green-5: rgb(10, 31, 3);
+    --green-5: rgb(11, 31, 4);
     --green-4: rgb(23, 70, 6);
     --green-3: rgb(29, 102, 5);
     --green-2: rgb(14, 135, 14);
@@ -37,13 +37,13 @@ header {
     color: white;
     text-align: center;
     padding-top: 40px;
-} & header > h1 {
+} & header h1 {
      font-family: var(--title);
      font-weight: 900;
      font-size: 3em;
      margin-bottom: 20px;
      text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.267);
-} & header > p {
+} & header p {
     max-width: 500px;
     margin: auto;
     padding-left: 10px;
@@ -56,13 +56,12 @@ nav {
     background-color: var(--green-5);
     box-shadow: 0px 7px 7px rgba(0, 0, 0, 0.192);
     padding: 10px;
-} nav > a{
+} & nav a{
     color: white;
     text-decoration: none;
     font-size: large;
     padding: 10px;
-}
-nav a:hover {
+} & nav a:hover {
     background-color: var(--green-3);
     color: var(--green-5);
 }
@@ -73,17 +72,36 @@ main {
     margin: auto;
     background-color: white;
     border-radius: 0 0 10px 10px;
+} & main h1, h2 {
+    text-indent: 10px;
+    background-image: linear-gradient(to right, var(--green-1), transparent);
+    margin-bottom: 10px;
+} & main p {
+    text-align: justify;
+    text-indent: 20px;
+} & main strong {
+    color: var(--green-5);
+    font-size: 1.3em;
+} & main a{
+    background-color: var(--green-1);
+    text-decoration: none;
+    font-size: 1.1em;
+    color: var(--green-5);
+} & main a:hover{
+    text-decoration: underline;
+    color: var(--green-1);
+    background-color: var(--green-4);
 }
 
                     /*Extenção do Corpo*/
 article {
     padding: 20px;
 }
-article > h1, h2{
+article  h1, h2{
     font-family: var(--sub-title);
-} & article > h1 {
+} & article h1 {
     font-size: 25px;
-} & article > h2 {
+} & article h2 {
     font-size: 20px;
 }
 
@@ -91,8 +109,7 @@ article > h1, h2{
 img {
     width: 100%;
 } #bugdroid {
-    max-width: 20%;
-    min-width: 50%;
+    max-width: 350px;
     margin: auto;
     display: block;
 }
