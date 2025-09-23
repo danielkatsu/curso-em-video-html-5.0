@@ -14,7 +14,7 @@
 
 :root {
                     /*Cores so site*/
-    --green-5: rgb(11, 31, 4);
+    --green-5: rgb(17, 45, 6);
     --green-4: rgb(23, 70, 6);
     --green-3: rgb(29, 102, 5);
     --green-2: rgb(14, 135, 14);
@@ -72,21 +72,31 @@ main {
     margin: auto;
     background-color: white;
     border-radius: 0 0 10px 10px;
+} & main h1{
+    color: var(--green-5);
+} & main h2{
+    color: var(--green-4);
+    font-size: 1.3em;
 } & main h1, h2 {
     text-indent: 10px;
     background-image: linear-gradient(to right, var(--green-1), transparent);
     margin-bottom: 10px;
 } & main p {
     text-align: justify;
-    text-indent: 20px;
+    text-indent: 30px;
+    margin: 15px 0;
+    line-height: 2em;
 } & main strong {
-    color: var(--green-5);
+    color: var(--green-4);
     font-size: 1.3em;
+
 } & main a{
     background-color: var(--green-1);
     text-decoration: none;
     font-size: 1.1em;
     color: var(--green-5);
+    font-weight: bold;
+    padding: -1px 6px;
 } & main a:hover{
     text-decoration: underline;
     color: var(--green-1);
@@ -101,8 +111,6 @@ article  h1, h2{
     font-family: var(--sub-title);
 } & article h1 {
     font-size: 25px;
-} & article h2 {
-    font-size: 20px;
 }
 
                     /*Imagens*/
